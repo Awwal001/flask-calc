@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.js" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <title>YourGPA</title>
+</head>
+<body>
+  <header>
+  <div class="background">  
+    <div class="transbox">
+      <div class="nav"> <nav class="navbar navbar-expand-sm bg-light navbar-light container-fluid">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+          <img class="pic" src="bird.jpg" alt="Logo" style="width:20px;">
+        </a>
+        <!-- Dropdown -->
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Type
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </div>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" id="top" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="top" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="top" href="#">About</a>
+            </li>
+          </ul>
+        </div>  
+      </nav></div>
+    </div>
+    <section class="heading">
+    <div class="container">
+      <div class="logo">
+        <span class="gpa"> Your GPA</span>
+        <div class="">
+          <div class="container">
+            <div class="row mt-4 text-center  ">
+              <div class="col-md-8 offset-md-2 ">
+                <img id="pen"class="img-fluid mx-auto d-block" src="calc.gif" alt="calc"  width="263" height="164">
+                <img class="img-fluid mx-auto d-block" id="num" src="Pen-Calculator.gif" alt="calc" width="263" height="164">
+                <h3 class="  p-3 text-capitalize text-white">
+                  Making your calculation
+                  super-easy and straightforward
+                with our Nigeria online GPA calculator 
+                 of multiple grading system types.</h3>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section> 
+    <div class="container-fluid">
+      <div class="topright">
+        <div class="buttons">
+              <a href="C:\Python27\Scripts\projects\gothonweb\templates\login.html" target="_blank"><button type="button" class="btn btn-primary btn-sm">Log in</button></a>
+              <a href="C:\Python27\Scripts\projects\gothonweb\templates\register.html" target="_blank"><button type="button" class="btn btn-primary btn-sm">Register</button></a>
+        </div>    
+      </div>
+    </div>
+
+  </div>  
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row mt-4 text-center">
+        <div class="col-md-8 offset-md-2 ">
+          <div class="nav-item dropdown" id="sure">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Select type
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="C:\Python27\Scripts\projects\gothonweb\templates\calc.html">5.00(A B C D F)</a>
+              <a class="dropdown-item" href="C:\Python27\Scripts\projects\gothonweb\templates\calc-5B.html">5.00(A B C D E F)</a>
+              <a class="dropdown-item" href="C:\Python27\Scripts\projects\gothonweb\templates\calc-4.html">4.00(A B C D F)</a>
+            </div>
+            <p >Input your values and click calculate.</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid ">
+      <div class="row mt-4 text-center  ">
+        <div class="col-md-8 offset-md-2 ">
+        <table class=" container .table-responsive-sm">
+          <thead>
+            <tr>
+              <th colspan="3" class="text-left" id="type"> 5.00(A B C D E F)</th>
+            </tr>
+            
+            <tr>
+              <td class="text-center">
+                <b>COURSE</b>
+                <i>(optional)</i>
+              </td>
+              <td>
+                <b>UNIT</b>
+              </td>
+              <td>
+                <b> GRADE</b>
+              </td>
+              </tr>
+
+          </thead>
+          <tbody id="main">
+              <tr>  
+                <td class="text-right">
+                <input type="text" name="c1" class="course">
+              </td>
+              <td>
+                <input type="number" name="u1" class="unit">
+              </td>
+              <td class="text-left">
+                <select name="s1" class="grade">
+                  <option value="&nbsp;"></option>
+                  <option value="5">A</option>
+                  <option value="4">B</option>
+                  <option value="3">C</option>
+                  <option value="2">D</option>
+                  <option value="1">E</option>
+                  <option value="0">F</option>
+                </select>
+                <input type="text" name="g1" 
+                style="display: none;">
+              </td>
+              </tr>	
+
+              <tr>  
+                <td class="text-right">
+                <input type="text" name="c1" class="course">
+              </td>
+              <td>
+                <input type="number" name="u1" class="unit">
+              </td>
+              <td class="text-left">
+                <select name="s1" class="grade">
+                  <option value="&nbsp;"></option>
+                  <option value="5">A</option>
+                  <option value="4">B</option>
+                  <option value="3">C</option>
+                  <option value="2">D</option>
+                  <option value="1">E</option>
+                  <option value="0">F</option>
+                </select>
+                <input type="text" name="g1" 
+                style="display: none;">
+              </td>
+              </tr>	
+
+              <tr>  
+                <td class="text-right">
+                <input type="text" name="c1" class="course">
+              </td>
+              <td>
+                <input type="number" name="u1" class="unit">
+              </td>
+              <td class="text-left">
+                <select name="s1" class="grade">
+                  <option value="&nbsp;"></option>
+                  <option value="5">A</option>
+                  <option value="4">B</option>
+                  <option value="3">C</option>
+                  <option value="2">D</option>
+                  <option value="1">E</option>
+                  <option value="0">F</option>
+                </select>
+                <input type="text" name="g1" 
+                style="display: none;">
+              </td>
+              </tr>	
+
+              <tr>  
+                <td class="text-right">
+                <input type="text" name="c1" class="course">
+              </td>
+              <td>
+                <input type="number" name="u1" class="unit">
+              </td>
+              <td class="text-left">
+                <select name="s1" class="grade">
+                  <option value="&nbsp;"></option>
+                  <option value="5">A</option>
+                  <option value="4">B</option>
+                  <option value="3">C</option>
+                  <option value="2">D</option>
+                  <option value="1">E</option>
+                  <option value="0">F</option>
+                </select>
+                <input type="text" name="g1" 
+                style="display: none;">
+              </td>
+              </tr>	
+
+              <tr>  
+                <td class="text-right">
+                <input type="text" name="c1" class="course">
+              </td>
+              <td>
+                <input type="number" name="u1" class="unit">
+              </td>
+              <td class="text-left">
+                <select name="s1" class="grade">
+                  <option value="&nbsp;"></option>
+                  <option value="5">A</option>
+                  <option value="4">B</option>
+                  <option value="3">C</option>
+                  <option value="2">D</option>
+                  <option value="1">E</option>
+                  <option value="0">F</option>
+                </select>
+                <input type="text" name="g1" 
+                style="display: none;">
+              </td>
+              </tr>	
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2" align="left">
+                <button class='btn-sm'  id="addRow">+ Add courses</button>
+                
+              </td>
+              <td align="right">
+                <button class='btn-sm'  id="addRow">+ Add semester</button>  
+              </td>
+
+            </tr>
+            <tr>
+              <td class="calc" colspan="3" align="center">
+                <button class='btn-success ' onclick="pushData(); document.getElementById('result').style.display='block'">C a l c u l a t e</button>
+                <img src="RichOily.webp" width="90px" alt=".">
+              </td>
+            </tr>
+            
+          </tfoot>
+        </table>
+        <br>
+        <div class="">
+          <input type="text" class="form-control" name="Paste" id="paste" placeholder="Paste here">
+      </div>
+        <br>
+
+
+        <p class="container-fluid" style="display:none" id="result">R E S U L T</p>
+        <br>
+        
+        <span class="calculate" id="pText"></span>
+
+        <table class="container table-bordered table-striped" id="table"></table>
+
+        <script src="array-5B.js"></script>
+       </div>
+      </div>
+    </div>
+  </main> 
+  <footer>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <!-- Navbar text-->
+      <span class="navbar-text">
+        © 2020
+      </span>
+    </nav>
+
+  </footer> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <script src="array-5B.js"></script>
+
+  <script>
+    var html = '<tr><td class="text-right"><input type="text" name="c1" class="course"></td><td><input type="number" name="u1" class="unit"></td>' + 
+      '<td class="text-left"><select name="s1"><option value="&nbsp;"></option><option value="5">A</option><option value="4">B</option>' + 
+      '  <option value="3">C</option><option value="2">D</option><option value="1">E</option><option value="0">F</option></select><input type="text" name="g1" ' + 
+      'value class="grade"style="display: none;"></td></tr>';
+
+    $(function() {
+      $('#main').sortable();
+
+      $('#addRow').click(function(){
+        $('#main').append(html);
+      });
+
+  
+    });
+
+
+ 
+  </script>
+</body>
+</html>

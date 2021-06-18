@@ -1,0 +1,24 @@
+body{
+    background: url('../static/new.jpg') no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+.jumbotron{
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 70%;
+    background-color: rgba(13, 75, 75, 0.116);
+}
+
+.form-control{
+    background-color: rgba(13, 75, 75, 0.116);
+    border: 0.5px groove  rgba(13, 75, 75, 0.158);
+}
+
+
+
+.btn{
+    background-color: rgba(13, 75, 75, 0.445);
+    align-content: center;
+}

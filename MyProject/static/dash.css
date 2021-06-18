@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  input[type=number] {
+    width: 80%;
+    border-radius: 5px;
+    border: 1px ridge slateblue;
+    
+}
+
+input[type=text] {
+    width: 85%;
+    border-radius: 5px;
+    border: 1px ridge slateblue;
+}
+
+select{
+    width: 90%;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+table{
+    background: rgb(209, 197, 202);
+    border-radius: 3px;
+}
+
+th{
+    color: rgb(92, 22, 22);
+    padding: 11px;
+}
+
+#table{
+    width: 100%;
+}
+
+.calculate{
+    color: darkblue;
+    font-size: large;
+    font-weight: bolder;
+    margin: 50px;
+}
+
+.btn-success{
+    padding: 6px;
+}
+
+.btn-toolbar{
+    background-color:  rgb(209, 197, 202);
+    padding: 5px;
+}
+
+.calc{
+    padding: 8px;
+}
+
+#addRow{
+    background: rgb(209, 197, 202);
+    border: 0px rgb(209, 197, 202);
+    font: 1em sans-serif;
+    color: darkred;
+    padding: 8px;
+}
+
+
+p {
+    background-color: slateblue;
+    font-size: large;
+    padding: 3px;
+    color: #ffffff;
+    border: 2px navy groove;
+    margin-right: 10px;
+    
+}

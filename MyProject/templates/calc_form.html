@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  
+}
+select {
+  width: 100%;
+  margin-left: -10px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+input[type=number] {
+  width: 70%;
+  padding-bottom: 8px;
+  margin-left: -20px;
+  border: 1px solid rgb(51, 32, 121);
+  border-radius: 5px;
+}	
+input[type=text] {
+  width: 80%;
+  padding-bottom: 8px;
+  margin: 5px 0;
+  
+  border: 1px solid rgb(51, 32, 121);
+  border-radius: 10px;
+}	
+th, td {
+  border-radius: 4px;
+
+}
+table {
+
+  border-radius: 10px;
+}
+</style>
+</head>
+
+<body style="background-color:ghostwhite;">
+<ul >
+	<li><a class="active" href="#home">Home</a></li>
+	<li><a href="#news">News</a></li>
+	<li><a href="#contact">Contact</a></li>
+	<li><a href="#about">About</a></li>
+  </ul>
+
+
+<form action="/hello" method="POST">
+<table style="background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);">
+  <tr>
+	<td>
+	
+	</td>
+	</tr>
+  <tr>
+	<td  align="left">
+		<b>COURSE</b>
+		<i>(optional)</i>
+	</td>
+	<td  align="left">
+		<b>UNIT</b>
+	</td>
+	<td  align="left">
+		<b> GRADE</b>
+	</td>
+  </tr>
+  
+  <tr>  
+    <td>
+	  	
+	  <input type="text" name="c1" class="inlonger"
+	</td>
+    <td>
+	  <input type="number" name="u1"
+	</td>
+	<td align="center">
+		<select name="s1" style="display: block;">
+			<option value="&nbsp;"</option>
+			<option value="5">A</option>
+			<option value="4">B</option>
+			<option value="3">C</option>
+			<option value="2">D</option>
+			<option value="0">F</option>
+		</select>
+		<input type="text" name="g1" value class="in4char"
+		style="display: none;"
+	</td>
+  </tr>	
+  <tr>
+    <td>
+	  <input type="text" name="c2"
+	</td>
+    <td>
+	  <input type="number" name="u2" 
+	</td>
+	<td align="center">
+		<select name="s2" style="display: block;">
+			<option value="&nbsp;"</option>
+			<option value="5">A</option>
+			<option value="4">B</option>
+			<option value="3">C</option>
+			<option value="2">D</option>
+			<option value="0">F</option>
+			</select>
+			<input type="text" name="g2" value class="in4char"
+			style="display: none;"
+	</td>
+  </tr>
+  <tr>
+	<td>
+	  <input type="text" name="c3"
+	</td>
+	<td>
+	  <input type="number" name="u3"  
+	</td>
+	<td align="center">
+		<select name="s3" style="display: block;">
+			<option value="&nbsp;"</option>
+			<option value="5">A</option>
+			<option value="4">B</option>
+			<option value="3">C</option>
+			<option value="2">D</option>
+			<option value="0">F</option>
+			</select>
+			<input type="text" name="g3" value class="in4char"
+			style="display: none;"
+	</td>
+  </tr>
+    <tr>
+	<td>
+	  <input type="text" name="c4"
+	</td>
+	<td>
+	  <input type="number" name="u4" 
+	</td>
+	<td align="center">
+		<select name="s4" style="display: block;">
+			<option value="&nbsp;"</option>
+			<option value="5">A</option>
+			<option value="4">B</option>
+			<option value="3">C</option>
+			<option value="2">D</option>
+			<option value="0">F</option>
+			</select>
+			<input type="text" name="g4" value class="in4char"
+			style="display: none;"
+	</td>
+  </tr>
+  <tr>  
+    <td>
+	  	
+	  <input type="text" name="c5" class="inlonger"
+	</td>
+    <td>
+	  <input type="number" name="u5" placeholder
+	</td>
+	<td align="center">
+		<select name="s5" style="display: block;">
+			<option value="&nbsp;"</option>
+			<option value="5">A</option>
+			<option value="4">B</option>
+			<option value="3">C</option>
+			<option value="2">D</option>
+			<option value="0">F</option>
+		</select>
+		<input type="text" name="g5" value class="in4char"
+		style="display: none;"
+	</td>
+  </tr>	
+  <tr>
+    <td>
+	  <input type="text" name="c6"
+	</td>
+    <td>
+	  <input type="number" name="u6"
+	</td>
+	<td align="center">
+		<select name="s6" style="display: block;">
+			<option value="&nbsp;"</option>
+			<option value="5">A</option>
+			<option value="4">B</option>
+			<option value="3">C</option>
+			<option value="2">D</option>
+			<option value="0">F</option>
+			</select>
+			<input type="text" name="g6" value class="in4char"
+			style="display: none;"
+	</td>
+  </tr>
+  <tr>
+	<td>
+	  <input type="text" name="c7"
+	</td>
+	<td>
+	  <input type="number" name="u7"
+	</td>
+	<td align="center">
+		<select name="s7" style="display: block;">
+			<option value="&nbsp;"</option>
+			<option value="5">A</option>
+			<option value="4">B</option>
+			<option value="3">C</option>
+			<option value="2">D</option>
+			<option value="0">F</option>
+			</select>
+			<input type="text" name="g7" value class="in4char"
+			style="display: none;"
+	</td>
+  </tr>
+  <tr>
+	<td>
+	  <input type="text" name="c8"
+	</td>
+	<td>
+	  <input type="number" name="u8"
+	</td>
+	<td align="center">
+		<select name="s8" style="display: block;">
+			<option value="&nbsp;"</option>
+			<option value="5">A</option>
+			<option value="4">B</option>
+			<option value="3">C</option>
+			<option value="2">D</option>
+			<option value="0">F</option>
+			</select>
+			<input type="text" name="g8" value class="in4char"
+			style="display: none;"
+	</td>
+  </tr>
+  <tr>
+	<td>
+	</td>
+    <td></td>
+  </tr>
+    <td></td>
+  </tr>
+  <tr>
+	<td colspan="3" align="center">
+		<em style="color:rgb(143, 15, 15); font-size: large;">+ add more courses</em>
+	</td>
+    <td></td>
+  </tr>
+    <td></td>
+  </tr>
+  <tr>
+	<td>
+	</td>
+	<tr>
+    <td>
+	  <input type="image" src="//d26tpo4cm8sb6k.cloudfront.net/img/svg/calculate.svg" 
+	        value="Calculate" alt="Calculate"
+	        onclick="C:/Python27/Scripts/projects/gothonweb/templates/index.html">
+	</td>
+  </tr>
+    <td></td>
+  </tr>
+
+
+</table>
+<br/>
+<input type="text" name="paste">
+<input type="submit">
+
+
+</body>
+</html>

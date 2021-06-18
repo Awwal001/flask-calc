@@ -1,0 +1,566 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- <div class="jumbotron"> -->
+    {% if current_user.is_authenticated %}
+    <head><link href="../static/dash.css" type="text/css" rel="stylesheet">
+
+    </head>
+    <h3>Welcome {{current_user.username}}!</h3>
+
+    </head>
+    <body>
+
+    <div class="sidebar">
+      <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+      <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+      <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+
+    <div class="content">
+      <main>
+        <div class="container-fluid">
+          <div class="row mt-4 text-center">
+            <div class="col-md-8 offset-md-2 ">
+              <div class="nav-item dropdown" id="sure">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Select type
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="C:\Users\Awwal\Documents\flask-login\MyProject\templates\calc.html">5.00(A B C D F)</a>
+                  <a class="dropdown-item" href="C:\Users\Awwal\Documents\flask-login\MyProject\templates\calc-5B.html">5.00(A B C D E F)</a>
+                  <a class="dropdown-item" href="C:\Users\Awwal\Documents\flask-login\MyProject\templates\calc-4.html">4.00(A B C D F)</a>
+                </div>
+                <p >Input your values and click calculate.</p>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid ">
+          <div class="row mt-4 text-center  ">
+            <div class="col-md-8 offset-md-2 ">
+            <table class="container .table-responsive-sm">
+              <thead>
+                <tr>
+                  <th colspan="3" class="text-left" id="type"> 5.00(A B C D F)</th>
+                </tr>
+                
+                <tr>
+                  <td class="text-center">
+                    <b>COURSE</b>
+                    <i>(optional)</i>
+                  </td>
+                  <td>
+                    <b>UNIT</b>
+                  </td>
+                  <td>
+                    <b> GRADE</b>
+                  </td>
+                  </tr>
+    
+              </thead>
+              <tbody id="main">
+                  <tr>  
+                    <td class="text-right">
+                    <input type="text" name="c1" class="course">
+                  </td>
+                  <td>
+                    <input type="number" name="u1" class="unit" min="1">
+                  </td>
+                  <td class="text-left">
+                    <select name="s1" class="grade">
+                      <option value="&nbsp;"></option>
+                      <option value="5">A</option>
+                      <option value="4">B</option>
+                      <option value="3">C</option>
+                      <option value="2">D</option>
+                      <option value="0">F</option>
+                    </select>
+                    <input type="text" name="g1" 
+                    style="display: none;">
+                  </td>
+                  </tr>	
+    
+                  <tr>  
+                    <td class="text-right">
+                    <input type="text" name="c1" class="course">
+                  </td>
+                  <td>
+                    <input type="number" name="u1" class="unit" min="1">
+                  </td>
+                  <td class="text-left">
+                    <select name="s1" class="grade">
+                      <option value="&nbsp;"></option>
+                      <option value="5">A</option>
+                      <option value="4">B</option>
+                      <option value="3">C</option>
+                      <option value="2">D</option>
+                      <option value="0">F</option>
+                    </select>
+                    <input type="text" name="g1" 
+                    style="display: none;">
+                  </td>
+                  </tr>	
+    
+                  <tr>  
+                    <td class="text-right">
+                    <input type="text" name="c1" class="course">
+                  </td>
+                  <td>
+                    <input type="number" name="u1" class="unit" min="1" >
+                  </td>
+                  <td class="text-left">
+                    <select name="s1" class="grade">
+                      <option value="&nbsp;"></option>
+                      <option value="5">A</option>
+                      <option value="4">B</option>
+                      <option value="3">C</option>
+                      <option value="2">D</option>
+                      <option value="0">F</option>
+                    </select>
+                    <input type="text" name="g1" 
+                    style="display: none;">
+                  </td>
+                  </tr>	
+    
+                  <tr>  
+                    <td class="text-right">
+                    <input type="text" name="c1" class="course">
+                  </td>
+                  <td>
+                    <input type="number" name="u1" class="unit" min="1">
+                  </td>
+                  <td class="text-left">
+                    <select name="s1" class="grade">
+                      <option value="&nbsp;"></option>
+                      <option value="5">A</option>
+                      <option value="4">B</option>
+                      <option value="3">C</option>
+                      <option value="2">D</option>
+                      <option value="0">F</option>
+                    </select>
+                    <input type="text" name="g1" 
+                    style="display: none;">
+                  </td>
+                  </tr>	
+    
+                  <tr>  
+                    <td class="text-right">
+                    <input type="text" name="c1" class="course">
+                  </td>
+                  <td>
+                    <input type="number" name="u1" class="unit" min="1">
+                  </td>
+                  <td class="text-left">
+                    <select name="s1" class="grade">
+                      <option value="&nbsp;"></option>
+                      <option value="5">A</option>
+                      <option value="4">B</option>
+                      <option value="3">C</option>
+                      <option value="2">D</option>
+                      <option value="0">F</option>
+                    </select>
+                    <input type="text" name="g1" 
+                    style="display: none;">
+                  </td>
+                  </tr>	
+    
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2" align="left">
+                    <button class='btn-sm'  id="addRow">+ Add courses</button>
+                    
+                  </td>
+                  <td align="right">
+                    <button class='btn-sm'  id="addRow">+ Add semester</button>  
+                  </td>
+    
+                </tr>
+                <tr>
+                  <td class="calc" colspan="3" align="center">
+                    <button class='btn-success ' onclick="pushData(); document.getElementById('result').style.display='block'">C a l c u l a t e</button>
+                    <img src="static/RichOily.webp" width="90px" alt=".">
+                  </td>
+                </tr>
+                
+              </tfoot>
+            </table>
+            <br>
+            <table class="container-fluid table-bordered table-light">
+              <tr>
+                <td><input type="text" style="width: 100%;" class="form-control" name="Paste" id="paste" placeholder="Paste here"></td>
+                <td align="left"><button class="btn-toolbar" id="fill-table" onclick="fillTable()">P a s t e</button></td>
+            </tr>
+            </table>
+            <br>
+    
+    
+            <p class="container-fluid" style="display:none" id="result">R E S U L T</p>
+            <br>
+            
+            <span class="calculate" id="pText"></span>
+    
+            <table class="container table-bordered table-striped" id="table"></table>
+
+            <script src="static/array.js"></script>
+            <script src="../static/append.js"></script>
+
+           </div>
+          </div>
+        </div>
+      </main> 
+
+
+      <script src="static/array.js"></script>
+    
+      <script>
+        var html = '<tr>'+  
+                    '<td class="text-right">'+
+                    '<input type="text" name="c1" class="course">'+
+                  '</td>'+
+                  '<td>'+
+                    '<input type="number" name="u1" class="unit" min="1" >'+
+                  '</td>'+
+                  '<td class="text-left">'+
+                    '<select name="s1" class="grade">'+
+                      '<option value="&nbsp;"></option>'+
+                      '<option value="5">A</option>'+
+                      '<option value="4">B</option>'+
+                      '<option value="3">C</option>'+
+                      '<option value="2">D</option>'+
+                      '<option value="0">F</option>'+
+                   ' </select>'+
+                    '<input type="text" name="g1" '+
+                   ' style="display: none;">'+
+                  '</td>'+
+                  '</tr>'
+    
+        $(function() {
+          $('#main').sortable();
+    
+          $('#addRow').click(function(){
+            $('#main').append(html);
+          });
+    
+      
+        });
+    
+    
+     
+      </script>
+    </div>
+        
+    </body>
+
+
+
+    {% else %}
+    <body>
+    <header>
+      <head><link href="../static/style.css" type="text/css" rel="stylesheet"></head>
+      <div class="background">  
+
+        </div>
+        <section class="heading">
+        <div class="container">
+          <div class="logo">
+            <span class="gpa"> Your GPA</span>
+            <div class="container">
+              <div class="container">
+                <div class="row mt-4 text-center  ">
+                  <div class="col-md-8 offset-md-2 ">
+                    <h3 class="  p-3 text-capitalize text-white">
+                      Making your calculation
+                      super-easy and straightforward
+                    with our Nigeria online GPA calculator 
+                     of multiple grading system types.</h3>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section> 
+        <div class="container-fluid">
+          <div class="topright">
+            <div class="buttons">
+              <a href="{{url_for('login')}}"><button type="button" class="btn btn-primary btn-sm">Log in</button></a>
+              <a href="{{url_for('Registration')}}"><button type="button" class="btn btn-primary btn-sm">Register</button></a>
+            </div>    
+          </div>
+        </div>
+    
+      </div>  
+      </header>
+      <main>
+        <div class="container-fluid">
+          <div class="row mt-4 text-center">
+            <div class="col-md-8 offset-md-2 ">
+              <div class="nav-item dropdown" id="sure">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Select type
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="C:\Users\Awwal\Documents\flask-login\MyProject\templates\calc.html">5.00(A B C D F)</a>
+                  <a class="dropdown-item" href="C:\Users\Awwal\Documents\flask-login\MyProject\templates\calc-5B.html">5.00(A B C D E F)</a>
+                  <a class="dropdown-item" href="C:\Users\Awwal\Documents\flask-login\MyProject\templates\calc-4.html">4.00(A B C D F)</a>
+                </div>
+                <p >Input your values and click calculate.</p>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid ">
+          <div class="row mt-4 text-center  ">
+            <div class="col-md-8 offset-md-2 ">
+            <table class="container .table-responsive-sm">
+              <thead>
+                <tr>
+                  <th colspan="3" class="text-left" id="type"> 5.00(A B C D F)</th>
+                </tr>
+                
+                <tr>
+                  <td class="text-center">
+                    <b>COURSE</b>
+                    <i>(optional)</i>
+                  </td>
+                  <td>
+                    <b>UNIT</b>
+                  </td>
+                  <td>
+                    <b> GRADE</b>
+                  </td>
+                  </tr>
+    
+              </thead>
+              <tbody id="main">
+                  <tr>  
+                    <td class="text-right">
+                    <input type="text" name="c1" class="course">
+                  </td>
+                  <td>
+                    <input type="number" name="u1" class="unit" min="1">
+                  </td>
+                  <td class="text-left">
+                    <select name="s1" class="grade">
+                      <option value="&nbsp;"></option>
+                      <option value="5">A</option>
+                      <option value="4">B</option>
+                      <option value="3">C</option>
+                      <option value="2">D</option>
+                      <option value="0">F</option>
+                    </select>
+                    <input type="text" name="g1" 
+                    style="display: none;">
+                  </td>
+                  </tr>	
+    
+                  <tr>  
+                    <td class="text-right">
+                    <input type="text" name="c1" class="course">
+                  </td>
+                  <td>
+                    <input type="number" name="u1" class="unit" min="1">
+                  </td>
+                  <td class="text-left">
+                    <select name="s1" class="grade">
+                      <option value="&nbsp;"></option>
+                      <option value="5">A</option>
+                      <option value="4">B</option>
+                      <option value="3">C</option>
+                      <option value="2">D</option>
+                      <option value="0">F</option>
+                    </select>
+                    <input type="text" name="g1" 
+                    style="display: none;">
+                  </td>
+                  </tr>	
+    
+                  <tr>  
+                    <td class="text-right">
+                    <input type="text" name="c1" class="course">
+                  </td>
+                  <td>
+                    <input type="number" name="u1" class="unit" min="1" >
+                  </td>
+                  <td class="text-left">
+                    <select name="s1" class="grade">
+                      <option value="&nbsp;"></option>
+                      <option value="5">A</option>
+                      <option value="4">B</option>
+                      <option value="3">C</option>
+                      <option value="2">D</option>
+                      <option value="0">F</option>
+                    </select>
+                    <input type="text" name="g1" 
+                    style="display: none;">
+                  </td>
+                  </tr>	
+    
+                  <tr>  
+                    <td class="text-right">
+                    <input type="text" name="c1" class="course">
+                  </td>
+                  <td>
+                    <input type="number" name="u1" class="unit" min="1">
+                  </td>
+                  <td class="text-left">
+                    <select name="s1" class="grade">
+                      <option value="&nbsp;"></option>
+                      <option value="5">A</option>
+                      <option value="4">B</option>
+                      <option value="3">C</option>
+                      <option value="2">D</option>
+                      <option value="0">F</option>
+                    </select>
+                    <input type="text" name="g1" 
+                    style="display: none;">
+                  </td>
+                  </tr>	
+    
+                  <tr>  
+                    <td class="text-right">
+                    <input type="text" name="c1" class="course">
+                  </td>
+                  <td>
+                    <input type="number" name="u1" class="unit" min="1">
+                  </td>
+                  <td class="text-left">
+                    <select name="s1" class="grade">
+                      <option value="&nbsp;"></option>
+                      <option value="5">A</option>
+                      <option value="4">B</option>
+                      <option value="3">C</option>
+                      <option value="2">D</option>
+                      <option value="0">F</option>
+                    </select>
+                    <input type="text" name="g1" 
+                    style="display: none;">
+                  </td>
+                  </tr>	
+    
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2" align="left">
+                    <button class='btn-sm'  id="addRow">+ Add courses</button>
+                    
+                  </td>
+                  <td align="right">
+                    <button class='btn-sm'  id="addRow">+ Add semester</button>  
+                  </td>
+    
+                </tr>
+                <tr>
+                  <td class="calc" colspan="3" align="center">
+                    <button class='btn-success ' onclick="pushData(); document.getElementById('result').style.display='block'; document.getElementById('print').style.display='block' ">C a l c u l a t e</button>
+                    <img src="static/RichOily.webp" width="90px" alt=".">
+                  </td>
+                </tr>
+                
+              </tfoot>
+            </table>
+            <br>
+            <table class="container-fluid table-bordered table-light">
+              <tr>
+                <td><input type="text" style="width: 100%;" class="form-control" name="Paste" id="paste" placeholder="Paste here"></td>
+                <td align="left"><button class="btn-toolbar" id="fill-table" onclick="fillTable()">P a s t e</button></td>
+            </tr>
+            </table>
+            <br>
+    
+    
+            <p class="container-fluid" style="display:none" id="result">R E S U L T</p>
+            <br>
+            
+            <span class="calculate" id="pText"></span>
+    
+            <table class="container table-bordered table-striped" id="table"></table>
+
+            <button style="display:none" id="print">
+              <input type="button" value="Print Table" onclick="myApp.printTable()" />
+            </button>
+            <br>
+            <em class="container-fluid" >Register Now To Track Your GPA!</em>
+            <a href="{{url_for('Registration')}}"><button type="button" class="btn btn-primary btn-sm">Register</button></a>
+    
+            <script src="static/array.js"></script>
+           </div>
+          </div>
+        </div>
+      </main> 
+      <footer>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+          <!-- Navbar text-->
+          <span class="navbar-text">
+            © 2020
+          </span>
+        </nav>
+    
+      </footer> 
+    
+      <script src="static/array.js"></script>
+
+      <script>
+        var myApp = new function () {
+            this.printTable = function () {
+              var style = "<style>";
+                  style = style + "table {width: 100%;font: 17px Calibri;}";
+                  style = style + "table, th, td {border: solid 1px #DDD; border-collapse: collapse;";
+                  style = style + "padding: 2px 3px;text-align: center;}";
+                  style = style + "</style>";
+
+                var tab = document.getElementById('table');
+                var win = window.open('', '', 'height=700,width=700');
+                win.document.write(style); 
+                win.document.write(tab.outerHTML);
+                win.document.close();
+                win.print();
+            }
+        }
+    </script>
+
+
+    
+      <script>
+        var html = '<tr>'+  
+                    '<td class="text-right">'+
+                    '<input type="text" name="c1" class="course">'+
+                  '</td>'+
+                  '<td>'+
+                    '<input type="number" name="u1" class="unit" min="1" >'+
+                  '</td>'+
+                  '<td class="text-left">'+
+                    '<select name="s1" class="grade">'+
+                      '<option value="&nbsp;"></option>'+
+                      '<option value="5">A</option>'+
+                      '<option value="4">B</option>'+
+                      '<option value="3">C</option>'+
+                      '<option value="2">D</option>'+
+                      '<option value="0">F</option>'+
+                   ' </select>'+
+                    '<input type="text" name="g1" '+
+                   ' style="display: none;">'+
+                  '</td>'+
+                  '</tr>'
+    
+        $(function() {
+          $('#main').sortable();
+    
+          $('#addRow').click(function(){
+            $('#main').append(html);
+          });
+    
+      
+        });
+    
+    
+     
+      </script>
+    {% endif %}
+</div>
+</body>
+{% endblock %}
